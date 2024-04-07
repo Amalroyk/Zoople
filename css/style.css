@@ -1,0 +1,36 @@
+
+
+
+h3{
+    color: blue;
+    font-size: large;
+    font-weight: 900;
+    text-transform: lowercase;
+}
+
+.outer{
+   width: 300px;
+   height: 300px;
+   background-color: yellow;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   
+   
+}
+
+
+.inner{
+
+    width: 20%;
+    height: 20%;
+    background-color: red;
+   
+    
+    
+
+
+    
+
+
+}

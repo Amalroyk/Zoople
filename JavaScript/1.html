@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+          
+    <div class="container">
+
+        <h1 id="message"></h1>
+        <input type="text" id="input">
+        <button onclick="fetch()">fetch</button>
+
+        <button onclick="show('Good Morning')">in the Morning</button>
+        <button onclick="show('Good Evening')">in the Evening</button>
+    </div>
+
+
+    <script>  
+
+       let fetch = () => {
+        let inputVal = document.getElementById('input').value ;
+        document.getElementById('message').innerHTML = inputVal ; 
+       }
+        
+        let show = (msg) => { 
+
+            document.getElementById('message').innerHTML = msg ; 
+
+                    }
+       
+        
+    </script>
+</body>
+
+</html>

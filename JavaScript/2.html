@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+            flex-direction: column;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+
+        }
+
+        .box {
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            height: 300px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inner {
+            background-color: rgb(255, 255, 255);
+            width: 100px;
+            height: 100px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            margin: 10px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="but">
+            <button onclick="clr('red')">RED</button>
+            <button onclick="clr('green')">GREEN</button>
+            <button id="bt">Click</button>
+        </div>
+        <div class="box" id="box">
+                <div class="inner">
+
+                </div>
+        </div>
+
+        <button id="toggle">Click Here</button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+
+        let clr = (color) => {
+
+            color == 'red' ? $('#box').css('background-color', 'red') : $('#box').css('background-color', 'green')
+
+        }  
+        $(document).ready(function () {
+            
+        $('#toggle').click(function(){
+            $('#box').toggle(1000);
+        })
+
+        $('#bt').mouseenter(function(){
+            $('.inner').css('background-color','orange');
+        })
+        $('#bt').mouseleave(function(){
+            $('.inner').css('background-color','blue');
+        })
+
+        });
+
+    </script>
+</body>
+
+</html>

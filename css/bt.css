@@ -1,0 +1,17 @@
+a{
+    background-color: green;
+    border: 2px;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+a:hover{
+
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px red;
+}
