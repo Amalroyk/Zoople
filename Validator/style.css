@@ -1,0 +1,28 @@
+div.container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 221, 221);
+}
+
+h2{
+    color: brown;
+    text-transform:uppercase;
+    margin: 20px;
+}
+
+input{
+    margin: 10px;
+    
+}
+
+button{
+    margin: 10px;
+}
+
+.error{
+    color: red;
+   
+    font-style: italic;
+}
